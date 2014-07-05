@@ -3,6 +3,8 @@
 
 **注意：**该项目重点在于用nodejs构建项目的流程，所以有些业务逻辑并没有补充完整，目前只是补充了登录注册。
 
+详情请查看[wiki](https://github.com/gcfeng/booklist/wiki)
+
 ## 部署
 ### 前端
     cd public
