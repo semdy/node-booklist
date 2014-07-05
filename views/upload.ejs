@@ -1,0 +1,113 @@
+<% include layout/head.ejs %>
+<% include header.ejs %>
+
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">上传书籍</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 40%">40%</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <span class="text-muted">100KB, 10KB/s, 剩余60秒</span>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary">暂停</button>
+                    <button class="btn btn-warning">停止</button>
+                </div>
+                <div class="col-md-4">
+                    <div class="well text-center">
+                        <button class="btn btn-primary btn-lg">添加文件</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <form class="form-horizontal" role="form">
+                    <!-- 左侧基本信息 -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label">书名</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="title" placeholder="书名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="author" class="col-sm-2 control-label">作者</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="author" placeholder="作者">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="press" class="col-sm-2 control-label">出版社</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="press" placeholder="出版社">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="date" class="col-sm-2 control-label">出版日期</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="date" placeholder="出版日期">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pages" class="col-sm-2 control-label">页数</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="pages" placeholder="页数">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="isbn" class="col-sm-2 control-label">ISBN</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="isbn" placeholder="ISBN索书号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="introduce" class="col-sm-2 control-label">简介</label>
+                            <div class="col-sm-9">
+                                <textarea name="introduce" id="introduce" class="form-control" rows="6" placeholder="填写书籍简介，帮助书籍推广"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧特征信息 -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="category" class="col-sm-2 control-label">分类</label>
+                            <div class="col-sm-9">
+                                <select name="category" id="category" class="form-control">
+                                    <option value="">计算机类</option>
+                                    <option value="">管理类</option>
+                                    <option value="">经济类</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tags" class="col-sm-2 control-label">标签</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="tags" placeholder="标签"/>
+                                <span class="help-block">多项标签用逗号隔开</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="thumnail" class="col-sm-2 control-label">缩略图</label>
+                            <div class="col-sm-9">
+                                <input type="file" id="thumnail"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary">确认提交</button>
+                                <button type="submit" class="btn btn-warning">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include layout/foot.ejs %>

@@ -1,0 +1,60 @@
+<% include layout/head.ejs %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-push-4 col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <ul id="loginTab" class="nav nav-tabs">
+                        <li class="active"><a href="#login">登录</a></li>
+                        <li><a href="#register">注册</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="login">
+                            <form id="loginForm">
+                                <div class="form-group">
+                                    <label for="name">用户名</label>
+                                    <input type="text" class="form-control" id="name" placeholder="输入用户名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">密码</label>
+                                    <input type="password" class="form-control" id="password" placeholder="密码">
+                                </div>
+                                <div class="checkbox">
+                                    <a href="/" class="pull-right">忘记密码了</a>
+                                    <label>
+                                        <input type="checkbox" name="autoLogin" checked> 下次自动登录
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="register">
+                            <form id="registerForm">
+                                <div class="form-group">
+                                    <label for="name">用户名</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="输入用户名">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">邮件地址</label>
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="输入邮件地址"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">密码</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="密码">
+                                </div>
+                                <div class="form-group">
+                                    <label for="repeatPassword">再次输入密码</label>
+                                    <input type="password" class="form-control" id="repeatPassword" name="repeatPassword" placeholder="再次输入密码">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- end panel-body -->
+            </div><!-- end panel -->
+        </div><!-- end col -->
+    </div><!-- end row -->
+</div>
+
+<% include layout/foot.ejs %>

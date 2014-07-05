@@ -1,0 +1,27 @@
+{
+    "name": "booklist",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node master.js",
+        "test": "mocha"
+    },
+    "dependencies": {
+        "express": "~4.2.0",
+        "static-favicon": "~1.0.0",
+        "cookie-parser": "~1.0.1",
+        "body-parser": "~1.0.0",
+        "ejs": "~0.8.5",
+        "client-sessions": "*",
+        "log4js": "*",
+        "mysql": "*",
+        "async": "*",
+        "q": "*"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.3",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-copy": "~0.5.0",
+        "grunt-replace": "*"
+    }
+}

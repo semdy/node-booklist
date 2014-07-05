@@ -1,0 +1,18 @@
+{
+    "appenders": [{
+        "type": "clustered",
+        "appenders": [
+            {
+                "type": "console"
+            },
+            {
+                "type": "dateFile",
+                "filename": "logs/booklist.log",
+                "pattern": "-yyyy-MM-dd",
+                "alwaysIncludePattern": true,
+                "pollInterval": 1,
+                "category": "dateFileLog"
+            }
+        ]
+    }]
+}
